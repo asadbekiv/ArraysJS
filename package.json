@@ -1,0 +1,14 @@
+{
+  "name": "arraysjs",
+  "version": "1.0.0",
+  "description": "for solving array tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "smth"
+  ],
+  "author": "Asadbek",
+  "license": "ISC"
+}
