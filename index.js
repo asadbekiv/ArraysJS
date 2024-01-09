@@ -89,3 +89,37 @@ console.log(getMaxSubSum([1, 2, 3]));
 console.log(getMaxSubSum([100, -9, 2, -3, 5]));
 
 console.log('Hi');
+
+
+
+
+// The problem in leetcode ARRAY two sum .
+
+
+let twoSum=function(nums,target){
+    let map={};
+    for (let i = 0; i < nums.length; i++) {
+        let value=nums[i];
+        let complementPair=target-value;
+        if (map[complementPair] !== undefined) {
+            return[map[complementPair],i]
+            
+        }else{
+            map[value]=i;
+        }
+    }
+}
+
+let nums=[2,7,11,13];
+let nums1=[3,2,4];
+let nums2=[3,3];
+
+let target=9;
+let target1=6;
+let target2=6;
+
+console.log(twoSum(nums,target));
+console.log(twoSum(nums1,target1));
+console.log(twoSum(nums2,target2));
+
+
