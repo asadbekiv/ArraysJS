@@ -122,4 +122,44 @@ console.log(twoSum(nums,target));
 console.log(twoSum(nums1,target1));
 console.log(twoSum(nums2,target2));
 
+// The problem leetcode Plus One
+
+let plusOne = function(digits) {
+    for (let i=digits.length-1;i>=0; i--){
+        if(digits[i]===9){
+            digits[i]=0;
+        }else{
+            digits[i]++
+            return digits
+        }
+    }
+    digits.unshift(1);
+    return digits;
+    
+};
+
+console.log(plusOne([1,2,3]));
+console.log(plusOne([1,2,3,4,5,6,7,8,9,10]));
+console.log(plusOne([9]));
+
+
+
+let newArr=[1,2,3];
+console.log(newArr.length);
+console.log('say hi ');
+
+for(let i=newArr.length-1;i>0;i--){
+    newArr.push(i);
+}
+console.log(newArr);
+console.log(newArr.at(-1));
+console.log(newArr.length-1);
+console.log(newArr.length);
+
+
+
+
+
+
+
 
