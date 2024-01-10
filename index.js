@@ -157,6 +157,26 @@ console.log(newArr.length-1);
 console.log(newArr.length);
 
 
+// leetcode problem 1480 Running Sum of 1d Array
+
+let numsArr=[1,2,3,4];
+let numsArr1=[1,1,1,1,1];
+let numsArr2=[3,1,2,10,1];
+
+let runningSum=function(nums){
+    let p=1;
+    while(p<nums.length){
+        nums[p]+=nums[p-1];
+        p+=1;
+    }
+    return nums
+    
+    
+
+}
+
+console.log(runningSum(numsArr),runningSum(numsArr1),runningSum(numsArr2));
+
 
 
 
