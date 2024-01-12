@@ -178,9 +178,9 @@ let runningSum=function(nums){
 console.log(runningSum(numsArr),runningSum(numsArr1),runningSum(numsArr2));
 
 
-//  Leetcode Return dublicate 27
+//  Leetcode Return duplicate 27
 
-let removeElements = function(nums,val){
+function removeElements(nums,val){
     let index=0;
     for (let i = 0; i < nums.length; i++) {
         if (nums[i] !== val) {
@@ -192,6 +192,7 @@ let removeElements = function(nums,val){
     }
     return index;
 }
+
 
 
 
