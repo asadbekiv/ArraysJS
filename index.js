@@ -178,9 +178,10 @@ let runningSum=function(nums){
 console.log(runningSum(numsArr),runningSum(numsArr1),runningSum(numsArr2));
 
 
+<<<<<<< HEAD
 //  Leetcode Return duplicate 27
 
-function removeElements(nums,val){
+let removeElements=function(nums,index){
     let index=0;
     for (let i = 0; i < nums.length; i++) {
         if (nums[i] !== val) {
@@ -194,6 +195,8 @@ function removeElements(nums,val){
 }
 
 
+=======
+>>>>>>> parent of 09f492c (Leetcode problem 27 Remove Duplicates)
 
 
 
